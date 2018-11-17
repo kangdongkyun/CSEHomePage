@@ -1,0 +1,127 @@
+h1, h2, h3, h4, h5, h6, p, span {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;    
+}   
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}   
+
+
+@media (max-width:799px){
+    /* 스마트 폰 용 스타일 */
+}
+@media only screen and (min-width : 800px) and (max-width:1023px){
+    /* 태블릿 PC 용 스타일 */
+}
+@media only screen and (min-width : 1024px){
+    /* 데스크탑 PC */
+    #gnb {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #gnb .top {
+        text-align: right;
+    }
+    #gnb .top ul{
+        /* padding-right: 50px; */
+    }
+    #gnb .top ul li {
+        display: inline-block;
+        text-align: center;
+        font-size: 0.8em;
+    }
+    #gnb .bottom {
+        display: flex;
+        border-bottom: solid 3px navy;
+    }
+    #gnb .bottom div {
+        flex: 1;
+    }
+    #gnb .bottom .content {
+        text-align: right;
+        padding-top: 20px;
+        /* padding-right: 50px; */
+    }
+    #gnb .bottom .content p{
+        font-size: 1.1em;
+    }
+    #nav ul {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #nav ul li{
+        flex : 1;
+        text-align: center;
+        padding: 10px 0;
+    }
+    #nav ul li:hover{
+        background-color: navy;
+        color: #ffffff;
+    }
+    #nav ul li:hover a{
+        color: #ffffff;
+    }
+    #slide-tabs .panel{
+        position: relative;
+        z-index: -10;
+        margin-bottom: 0;
+    }
+    #slide-tabs .panel img{
+        width :100%;
+        height: 700px;
+    }
+    #slide-tabs .panel .panel-content{
+        position: absolute;
+        top:200px;
+        left : 150px;
+        border: 2px solid #244371;
+        background-color: #244371;
+        padding: 80px 50px;
+        opacity: 0.7;
+    }
+    #slide-tabs .panel .panel-content h1{
+        font-size: 1.2em;
+        color: #ddd;
+    }
+    #slide-tabs .panel .panel-content p{
+        font-size: 1.1em;
+        color: #ffffff;
+    }
+    #slide-tabs .panel-tabs {
+        position: relative;
+        bottom: 5px;
+        width:80%;
+        margin:0 auto;
+    }
+    #slide-tabs .panel-tabs ul{
+        display: flex;
+        border-bottom: solid 3px navy;
+    }
+    #slide-tabs .panel-tabs ul li{
+        flex : 1;
+        text-align: center;
+        padding: 10px 0;
+    }
+    #slide-tabs .panel-tabs ul li:hover{
+        background-color: navy;
+        color: #ffffff;
+    }
+    #slide-tabs .panel-tabs ul li:hover a{
+        color: #ffffff;
+    }
+    
+
+
+
+    #footer{
+        width:100%;
+    }
+}
