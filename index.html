@@ -30,8 +30,24 @@
                     </div>                
                 </div>
             </div>
-            
-           
+        </section>
+        <!-- mobileHeader -->
+        <section id="mobile-header">
+            <div id="gnb">
+                <div class="menu-trigger" onclick='openNav()'>
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </div>                
+                
+                <div class="logo">
+                    <a href="#"><img src="./img/cse_logo.png" alt=""></a>
+                </div>              
+                <div class="left-icons">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="#"><i class="fas fa-user-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <!-- nav -->
         <section id="nav">
@@ -47,11 +63,27 @@
                 <li><a href="">학부서비스</a></li>
             </ul>
         </section>
+        <!-- Sidenav -->
+        <section id="side-nav">
+            <ul>
+                <li><a href="#" onclick='closeNav()' class="closebtn">X</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">구성원소개</a></li>
+                <li><a href="#">학사안내</a></li>
+                <li><a href="#">입학</a></li>
+                <li><a href="#">학부광장</a></li>
+                <li><a href="#">자료실</a></li>
+                <li><a href="#">대학원</a></li>
+                <li><a href="#">공학교육인증</a></li>
+                <li><a href="#">학부서비스</a></li>
+            </ul>
+        </section>
+        
         <!-- slide-tab -->
         <section id="slide-tabs">
             <!-- panel tabs -->      
             <div class="panel">
-                <img src="./img/slide_img1.jpg" alt="">
+                <!-- <img src="./img/slide_img1.jpg" alt=""> -->
                 <div class="panel-content">
                     <h1>IT 교육의 글로벌 메카</h1>
                     <p>한국기술교육대학교 컴퓨터공학부 홈페이지에 오신 것을 환영합니다!</p>
@@ -175,5 +207,13 @@
 
 
     </section>
+
+
+    <!-- vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/menu-trigger.js"></script>
+    <script src="./js/top-menu.js"></script>
 </body>
 </html>
