@@ -201,18 +201,27 @@ a {
     }
     #slide-tabs .panel-tabs {
         position: relative;
-        bottom: 5px;
+        bottom: 20px;
         width:80%;
         margin:0 auto;
     }
+    #slide-tabs .panel-tabs .element{
+        text-align: center;
+    }
     #slide-tabs .panel-tabs ul{
+        height: 60px;
+        background-color: #fff;
         display: flex;
-        border-bottom: solid 3px navy;
+        border: solid 1px #ffffff;
+        box-shadow: 5px 5px 10px #aaaaaa;
     }
     #slide-tabs .panel-tabs ul li{
         flex : 1;
-        text-align: center;
         padding: 10px 0;
+        border-left: 1px solid #eeeeee;
+    }
+    #slide-tabs .panel-tabs ul li:last-of-type{
+        border-right: 1px solid #eeeeee;
     }
     #slide-tabs .panel-tabs ul li:hover{
         background-color: navy;
@@ -221,6 +230,14 @@ a {
     #slide-tabs .panel-tabs ul li:hover a{
         color: #ffffff;
     }
+    #slide-tabs .panel-tabs ul li i{
+        font-size: 2.5em;
+        display: inline-block;
+    }    
+    #slide-tabs .panel-tabs ul li h2{
+        line-height: 2.5em;
+        display: inline-block;
+    }    
     #footer{
         width:100%;
         background-color: #f2f4f7;
@@ -249,5 +266,46 @@ a {
     }
     #footer #footer-copyrights .footer-img{
         flex :3;
+    }
+    #recent_board .board_area{
+        background-color: #fff;
+        border:1px solid #d6d6d6;
+    }
+    #recent_board .row{
+        display: flex;
+        width:80%;
+        margin: 0 auto;
+    }
+    #recent_board .row .board_area{
+        flex:1;
+        position: relative;
+        margin:3px;
+    }
+    #recent_board .board_area h1{
+        font-size : 1.2em;
+        margin: 10px;
+        padding :10px;
+        border-bottom: 3px solid rgb(114, 111, 105);
+    }
+    #recent_board .board_area h1 i{
+        font-size : 1.2em;
+        position: absolute;
+        color: rgb(114, 111, 105);
+        right: 10px;
+    }
+    #recent_board .board_area h1 i:hover{
+        color:navy;
+    }
+    #recent_board .board_area ul{
+        list-style: disc;
+        padding-left:20px;
+    }
+    #recent_board .board_area ul li{
+        padding: 5px 0;
+        font-size: 1.1em;
+    }
+    #recent_board .board_area ul li a:hover{
+        color:navy;
+        font-size: 1.2em;
     }
 }
