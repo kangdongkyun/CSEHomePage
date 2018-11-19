@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>컴퓨터공학부</title>
+    <!-- pgwslider -->
+    <link rel="stylesheet" href="lib/PgwSlider/pgwslider.min.css">
+    <!-- w3schools -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -22,7 +26,7 @@
                 </div>
                 <div class="bottom">
                     <div class="logo">
-                        <a href="#"><img src="./img/cse_logo.png" alt=""></a>
+                        <a href="#"><img src="./img/O_cse_logo.png" alt=""></a>
                     </div>
                     <div class="content">
                         <p>IT 교육의 글로벌 메카!</p>
@@ -81,9 +85,23 @@
         
         <!-- slide-tab -->
         <section id="slide-tabs">
-            <!-- panel tabs -->      
+            <!-- panel tabs -->  
             <div class="panel">
                 <img src="./img/slide_img1.jpg" alt="">
+                <div class="panel-content">
+                    <h1>IT 교육의 글로벌 메카</h1>
+                    <p>한국기술교육대학교 컴퓨터공학부 홈페이지에 오신 것을 환영합니다!</p>
+                </div>            
+            </div>
+            <div class="panel"  style="display:none;">
+                <img src="./img/slide_img2.jpg" alt="">
+                <div class="panel-content">
+                    <h1>IT 교육의 글로벌 메카</h1>
+                    <p>한국기술교육대학교 컴퓨터공학부 홈페이지에 오신 것을 환영합니다!</p>
+                </div>            
+            </div>
+            <div class="panel"style="display:none;">
+                <img src="./img/slide_img3.jpg" alt="">
                 <div class="panel-content">
                     <h1>IT 교육의 글로벌 메카</h1>
                     <p>한국기술교육대학교 컴퓨터공학부 홈페이지에 오신 것을 환영합니다!</p>
@@ -91,9 +109,9 @@
             </div>     
             <div class ="panel-tabs">
                 <ul>
-                    <li><a href="#"><div class="element"><i class="fas fa-laptop"></i> <h2>컴퓨터공학부</h2></div></a></li>
-                    <li><a href="#"><div class="element"><i class="fas fa-building"></i> <h2>IT 융합소프트웨어 인력양성사업</h2></div></a></li>
-                    <li><a href="#"><div class="element"><i class="fas fa-graduation-cap"></i> <h2>교육역량강화사업 온라인 컨텐츠</h2></div></a></li>
+                    <li><a href="#" onclick="currentDiv(1)"><div class="element demo"><i class="fas fa-laptop"></i> <h2>컴퓨터공학부</h2></div></a></li>
+                    <li><a href="#" onclick="currentDiv(2)"><div class="element demo"><i class="fas fa-building"></i> <h2>IT 융합소프트웨어 인력양성사업</h2></div></a></li>
+                    <li><a href="#" onclick="currentDiv(3)"><div class="element demo"><i class="fas fa-graduation-cap"></i> <h2>교육역량강화사업 온라인 컨텐츠</h2></div></a></li>
                 </ul>
             </div>
         </section>
@@ -221,5 +239,7 @@
     <script src="./js/menu-trigger.js"></script>
     <script src="./js/top-menu.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/imgslider.js"></script>
+    
 </body>
 </html>

@@ -13,6 +13,7 @@ a {
     text-decoration: none;
     color: #000000;
 }   
+/* .panel {display:none} */
 
 @media (max-width:799px){
     /* 스마트 폰 용 스타일 */
@@ -20,7 +21,7 @@ a {
         display: none;
     }
     .fixed{
-        position: fixed;
+        position: fixed;    
         top :0px;
     }
     #mobile-header{
@@ -282,10 +283,11 @@ a {
         margin:3px;
     }
     #recent_board .board_area h1{
-        font-size : 1.2em;
+        font-size : 1.4em;
+        font-weight: bold;
         margin: 10px;
         padding :10px;
-        border-bottom: 3px solid rgb(114, 111, 105);
+        border-bottom: 3px solid navy;/*rgb(114, 111, 105);*/
     }
     #recent_board .board_area h1 i{
         font-size : 1.2em;
